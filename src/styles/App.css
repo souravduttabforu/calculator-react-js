@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.app_cal {
+  height: 550px;
+  width: 300px;
+  box-shadow: 1px -1px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.app_cal_display {
+  flex: 1;
+  color: black;
+  background-color: bisque;
+}
+.app_cal_keypad {
+  flex: 1.5;
+  color: aliceblue;
+  background-color: black;
+  padding: 18px;
+  display: flex;
+}
+
+.app_cal_display {
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.app_cal_display_user_input {
+  padding: 0.8rem;
+  overflow-x:auto;
+  
+}
+
+.app_cal_display_result {
+  padding: 0.8rem;
+}
+
+.app_cal_keypad p {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+  user-select: none;
+}
+.app_cal_keypad_numbers {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+.app_cal_keypad_numbers p {
+  height: 25%;
+  width: 33%;
+}
+.app_cal_keypad_numbers p:active {
+  background-color: rgb(102, 101, 101);
+}
+.app_cal_keypad_symbols {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.app_cal_keypad_symbols p {
+  height: 20%;
+  width: 100%;
+}
+.app_cal_keypad_symbols p:active {
+  background-color: rgb(102, 101, 101);
+}
